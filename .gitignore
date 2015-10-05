@@ -1,0 +1,11 @@
+output
+.DS_Store
+
+# build artifacts
+css-3d-effects.html
+css-3d-effects.pdf
+css-3d-effects.pdfmarks
+css-3d-effects.epub
+css-3d-effects-kf8.epub
+css-3d-effects.mobi
+/images/

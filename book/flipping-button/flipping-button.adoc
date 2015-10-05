@@ -1,24 +1,23 @@
-= Flipping Button
-Makzan <mak@makzan.net>
-v1.0, 2015-10-04
+== Flipping Button
+// v1.0, 2015-10-04
 
 We are going to create the following effect:
 
-image::http://f.cl.ly/items/0C1Q2V1X1S333c2N2V2B/3d-flipping.gif[3D flipping effect]
+image::images/3d-flipping.gif[3D flipping effect]
 
-The link is a normal button style until you mouse over on it. When hover, the button flips 360 degree. When the mouse moves out, the button return to is original position in a smooth pace. 
+The link is a normal button style until you mouse over on it. When hover, the button flips 360 degree. When the mouse moves out, the button return to is original position in a smooth pace.
 
-== Step 1—Defining the HTML
+=== Step 1—Defining the HTML
 
 [source,html]
 ----
-<div class='button3d'> # <1>
+<div class='button3d'> <1>
   <a href='#' class='button'>Hover me</a>
 </div>
 ----
 <1> The container to preserve the hover effect.
 
-== Step 2—Add the basic style
+=== Step 2—Add the basic style
 
 [source,css]
 ----
@@ -35,7 +34,7 @@ a {
 }
 ----
 
-== Step 3—Define the 3D flipping effect.
+=== Step 3—Define the 3D flipping effect.
 
 [source,css]
 ----
@@ -54,7 +53,7 @@ a {
 <1> 0.6s when the mouse is out. Slow to make it reverts smoothly.
 <2> 0.3s when the mouse is over. Fast to make it looks response.
 
-== Result
+=== Result
 
 pass:[
 <p data-height="268" data-theme-id="0" data-slug-hash="Alytd" data-default-tab="result" data-user="makzan" class='codepen'>See the Pen <a href='http://codepen.io/makzan/pen/Alytd/'>3D Flipping button</a> by Thomas Seng Hin Mak (<a href='http://codepen.io/makzan'>@makzan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
