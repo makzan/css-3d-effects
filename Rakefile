@@ -13,19 +13,19 @@ namespace :book do
   task :build => :prebuild do
     puts "Converting to HTML..."
     `bundle exec asciidoctor -D output css-3d-effects.adoc`
-    puts " -- HTML output at css-3d-effects.html"
+    puts " -- HTML output at output/css-3d-effects.html"
 
     puts "Converting to EPub..."
     `bundle exec asciidoctor-epub3 -D output css-3d-effects.adoc`
-    puts " -- Epub output at css-3d-effects.epub"
+    puts " -- Epub output at output/css-3d-effects.epub"
 
     puts "Converting to Mobi (kf8)..."
     `bundle exec asciidoctor-epub3 -a ebook-format=kf8 -D output css-3d-effects.adoc`
-    puts " -- Mobi output at css-3d-effects.mobi"
+    puts " -- Mobi output at output/css-3d-effects.mobi"
 
     puts "Converting to PDF... (this one takes a while)"
     `bundle exec asciidoctor-pdf -D output css-3d-effects.adoc 2>/dev/null`
-    puts " -- PDF  output at css-3d-effects.pdf"
+    puts " -- PDF  output at output/css-3d-effects.pdf"
   end
 
   desc 'build each chapter'
