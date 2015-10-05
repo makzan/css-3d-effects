@@ -6,7 +6,8 @@ v1.0, October 4, 2015: First Draft
 :toc: left
 :toclevels: 2
 :sectnums:
+:linkcss:
 
 A short book about making CSS 3D effects.
 
-include::book/flipping-button/flipping-button.asciidoc[]
+include::book/flipping-button/flipping-button.adoc[]
