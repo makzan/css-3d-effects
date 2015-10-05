@@ -6,6 +6,8 @@ We are going to create the following effect:
 
 image::http://f.cl.ly/items/0C1Q2V1X1S333c2N2V2B/3d-flipping.gif[3D flipping effect]
 
+The link is a normal button style until you mouse over on it. When hover, the button flips 360 degree. When the mouse moves out, the button return to is original position in a smooth pace. 
+
 == Step 1—Defining the HTML
 
 [source,html]
