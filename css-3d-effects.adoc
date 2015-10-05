@@ -10,4 +10,4 @@ v1.0, October 4, 2015: First Draft
 
 A short book about making CSS 3D effects.
 
-include::book/flipping-button/flipping-button.adoc[]
+include::book/flipping-button/flipping-button.adoc[leveloffset=+1]
