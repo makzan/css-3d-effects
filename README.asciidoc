@@ -1,2 +1,3 @@
-# css-3d-effects
+= CSS 3D Effects
+
 A short book about making CSS 3D effects.
