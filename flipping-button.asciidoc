@@ -8,6 +8,7 @@ image::http://f.cl.ly/items/0C1Q2V1X1S333c2N2V2B/3d-flipping.gif[3D flipping eff
 
 == Step 1—Defining the HTML
 
+[source,html]
 ----
 <div class='button3d'>
   <a href='#' class='button'>Hover me</a>
@@ -16,6 +17,7 @@ image::http://f.cl.ly/items/0C1Q2V1X1S333c2N2V2B/3d-flipping.gif[3D flipping eff
 
 == Step 2—Add the basic style
 
+[source,css]
 ----
 a {
   text-decoration: none;
@@ -32,6 +34,7 @@ a {
 
 == Step 3—Define the 3D flipping effect.
 
+[source,css]
 ----
 .button3d {
   perspective: 600;
