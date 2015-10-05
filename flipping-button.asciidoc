@@ -10,10 +10,11 @@ image::http://f.cl.ly/items/0C1Q2V1X1S333c2N2V2B/3d-flipping.gif[3D flipping eff
 
 [source,html]
 ----
-<div class='button3d'>
+<div class='button3d'> # <1>
   <a href='#' class='button'>Hover me</a>
 </div>
 ----
+<1> The container to preserve the hover effect.
 
 == Step 2—Add the basic style
 
@@ -41,13 +42,15 @@ a {
   cursor: pointer;
 }
 .button3d .button {
-  transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; # <1>
 }
 .button3d:hover .button {
   transform: rotateX(360deg);
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; # <2>
 }
 ----
+<1> 0.6s when the mouse is out. Slow to make it reverts smoothly.
+<2> 0.3s when the mouse is over. Fast to make it looks response.
 
 == Result
 
