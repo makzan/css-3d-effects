@@ -1,6 +1,7 @@
 namespace :book do
   desc 'prepare build'
   task :prebuild do
+    Dir.mkdir 'output' unless Dir.exists? 'output'
     Dir.mkdir 'output/images' unless Dir.exists? 'output/images'
     Dir.mkdir 'images' unless Dir.exists? 'images'
     Dir.glob("book/*/images/*").each do |image|
