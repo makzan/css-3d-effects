@@ -1,9 +1,10 @@
 = Flipping Button
+:imagesdir: images/
 // v1.0, 2015-10-04
 
 We are going to create the following effect:
 
-image::images/3d-flipping.gif[3D flipping effect]
+image::3d-flipping.gif[3D flipping effect]
 
 The link is a normal button style until you mouse over on it. When hover, the button flips 360 degree. When the mouse moves out, the button return to is original position in a smooth pace.
 
@@ -63,5 +64,42 @@ pass:[
 Here is the captured screen video showing the effect.
 
 pass:[
-<iframe src="https://player.vimeo.com/video/141307034?loop=1&color=ff9933" width="500" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/141307034">3d flipping demo</a> from <a href="https://vimeo.com/makzan">Thomas Mak</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="https://player.vimeo.com/video/141307034?loop=1&color=ff9933&byline=0&portrait=0" width="100%" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/141307034">3d flipping demo</a> from <a href="https://vimeo.com/makzan">Thomas Mak</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 ]
+
+== How it works
+
+We have created the effect. Let’s take a look on the key techniques to make it works.
+
+=== 3D rotating
+
+The rotation is done by the `rotateX` transform.
+
+----
+transform: rotateX(360deg);
+----
+
+Why X-axis?
+
+The following graph shows the coordination of the screen. In order to create the 3D rotating effect, we actually rotate around the X-axis.
+
+image::coordination.png[]
+
+
+=== The container
+
+The container is essential for the hover to work.
+
+image::space-1.png[]
+
+Imagine when we hover on the a link, we rotate the link. During the rotation, the effective area of the link actually reduces.
+
+image::space-2.png[]
+
+So even the mouse doesn't move, the hover styles are removed because the mouse is no longer over on the area of the link.
+
+In order to address this issue. We need a container to wrap the link.
+
+Then we apply the hover selector on the container. In this case, the effective area doesn't change during the animation.
+
+image::space-3.png[]
