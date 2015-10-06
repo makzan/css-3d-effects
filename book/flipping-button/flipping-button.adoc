@@ -2,7 +2,7 @@
 :imagesdir: images/
 // v1.0, 2015-10-04
 
-We are going to create the following effect:
+We are going to create the following hover effect:
 
 image::3d-flipping.gif[3D flipping effect]
 
@@ -35,6 +35,10 @@ a {
 }
 ----
 
+The basic style defines how the button looks. The following is the result we get after this step.
+
+image::basic-style.png[]
+
 == Step 3—Define the 3D flipping effect.
 
 [source,css]
@@ -56,12 +60,14 @@ a {
 
 == Result
 
+You can view the live demo of the effects in the following CodePen page.
+
 pass:[
 <p data-height="268" data-theme-id="0" data-slug-hash="Alytd" data-default-tab="result" data-user="makzan" class='codepen'>See the Pen <a href='http://codepen.io/makzan/pen/Alytd/'>3D Flipping button</a> by Thomas Seng Hin Mak (<a href='http://codepen.io/makzan'>@makzan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 ]
 
-Here is the captured screen video showing the effect.
+Alternatively, the following is the captured screen video showing the hover effect.
 
 pass:[
 <iframe src="https://player.vimeo.com/video/141307034?loop=1&color=ff9933&byline=0&portrait=0" width="100%" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/141307034">3d flipping demo</a> from <a href="https://vimeo.com/makzan">Thomas Mak</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
